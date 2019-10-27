@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -66,7 +67,7 @@ public class WindowofDictionary extends AppCompatActivity implements View.OnClic
         for (int i = 0; i < searchWord.length; i += 2) {
             Search.put(searchWord[i], searchWord[i + 1]);
             ArrayAdapter arraySearch = new ArrayAdapter(WindowofDictionary.this,
-                    android.R.layout.simple_expandable_list_item_1, new ArrayList<String>(Search.keySet()));
+            android.R.layout.simple_expandable_list_item_1, new ArrayList<String>(Search.keySet()));
             searchText.setAdapter(arraySearch);
             searchText.setThreshold(1);
         }
