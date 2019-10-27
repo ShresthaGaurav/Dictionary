@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".WindowofDictionary">
+
+    <AutoCompleteTextView
+        android:id="@+id/autocomtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        android:fontFamily="arialblack"
+        android:hint=" Word to Search"
+        android:inputType="textCapCharacters"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Btnsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="arialblack"
+        android:inputType="text"
+        android:text="Search"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/LV1"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="arialblack"
+        android:gravity="center"
+        android:text="Suggested Word"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/LV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
